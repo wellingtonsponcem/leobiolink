@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cores do Tema */
+  --color-background: #101415;
+  --color-secondary-fixed: #ffdea5;
+  --color-on-secondary-container: #dab36a;
+  --color-primary-fixed: #d6e3ff;
+  --color-on-tertiary-fixed: #00164e;
+  --color-on-primary: #233148;
+  --color-on-primary-fixed: #0d1c32;
+  --color-secondary-container: #604403;
+  --color-surface-container: #1d2022;
+  --color-surface-container-low: #191c1e;
+  --color-primary: #b9c7e4;
+  --color-surface: #101415;
+  --color-on-secondary: #412d00;
+  --color-inverse-on-surface: #2d3133;
+  --color-tertiary-fixed: #dce1ff;
+  --color-on-error-container: #ffdad6;
+  --color-on-surface-variant: #c5c6cd;
+  --color-outline-variant: #44474d;
+  --color-on-error: #690005;
+  --color-primary-fixed-dim: #b9c7e4;
+  --color-surface-container-high: #272a2c;
+  --color-surface-container-lowest: #0b0f10;
+  --color-primary-container: #0a192f;
+  --color-on-tertiary-fixed-variant: #264191;
+  --color-tertiary-container: #001449;
+  --color-on-tertiary: #05297a;
+  --color-on-secondary-fixed: #261900;
+  --color-error-container: #93000a;
+  --color-surface-tint: #b9c7e4;
+  --color-inverse-primary: #515f78;
+  --color-surface-bright: #363a3b;
+  --color-on-tertiary-container: #667ed1;
+  --color-error: #ffb4ab;
+  --color-secondary: #e9c176;
+  --color-tertiary: #b6c4ff;
+  --color-on-primary-container: #74829d;
+  --color-on-secondary-fixed-variant: #5d4201;
+  --color-surface-dim: #101415;
+  --color-on-primary-fixed-variant: #39475f;
+  --color-tertiary-fixed-dim: #b6c4ff;
+  --color-surface-variant: #323537;
+  --color-on-background: #e0e3e5;
+  --color-secondary-fixed-dim: #e9c176;
+  --color-surface-container-highest: #323537;
+  --color-inverse-surface: #e0e3e5;
+  --color-outline: #8f9097;
+  --color-on-surface: #e0e3e5;
+
+  /* Espaçamentos Customizados */
+  --spacing-stack-gap-lg: 2rem;
+  --spacing-stack-gap-md: 1.25rem;
+  --spacing-button-padding-y: 1rem;
+  --spacing-container-padding: 1.5rem;
+  --spacing-card-inner-padding: 1.5rem;
+
+  /* Fontes */
+  --font-headline-lg: "Hanken Grotesk", sans-serif;
+  --font-label-sm: "JetBrains Mono", monospace;
+  --font-body-lg: "Manrope", sans-serif;
+  --font-headline-lg-mobile: "Hanken Grotesk", sans-serif;
+  --font-headline-xl: "Hanken Grotesk", sans-serif;
+  --font-body-md: "Manrope", sans-serif;
+
+  /* Tamanhos de Fonte */
+  --text-headline-lg: 32px;
+  --text-headline-lg--line-height: 1.2;
+  --text-headline-lg--font-weight: 600;
+
+  --text-label-sm: 12px;
+  --text-label-sm--line-height: 1.0;
+  --text-label-sm--letter-spacing: 0.1em;
+  --text-label-sm--font-weight: 500;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+
+  --text-headline-lg-mobile: 28px;
+  --text-headline-lg-mobile--line-height: 1.2;
+  --text-headline-lg-mobile--font-weight: 600;
+
+  --text-headline-xl: 40px;
+  --text-headline-xl--line-height: 1.1;
+  --text-headline-xl--letter-spacing: -0.02em;
+  --text-headline-xl--font-weight: 700;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.5;
+  --text-body-md--font-weight: 400;
+
+  /* Border Radius */
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+body {
+  background-color: #101415;
+  color: #e0e3e5;
+  -webkit-font-smoothing: antialiased;
+  min-height: max(884px, 100dvh);
+}
+
+.glass-card {
+  background: rgba(29, 32, 34, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(143, 144, 151, 0.1);
+}
+
+.pulse-animation {
+  animation: pulse-gold 2s infinite;
+}
+
+@keyframes pulse-gold {
+  0% { box-shadow: 0 0 0 0 rgba(233, 193, 118, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(233, 193, 118, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(233, 193, 118, 0); }
+}
+
+.bg-mesh {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 50% -20%, #1a2a44 0%, #101415 70%);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
