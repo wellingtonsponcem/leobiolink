@@ -25,9 +25,9 @@ Este arquivo registra o andamento das tarefas e decisões tomadas para manter a 
   - **Integração WhatsApp:** Configurado o link "Seja um Investidor" e "Falar com a Assessoria" para apontar para o WhatsApp `+55 27 99578-9223` com copies personalizadas.
   - **Atualização do Logotipo:** Copiado o arquivo `logo_fidelity-P-M.svg` para a pasta estática `/public/site/asset/` e atualizado o subsite.
   - **Favicon Global:** Copiado o arquivo `favicon.png` para a raiz de `/public/` e linkado no cabeçalho.
-  - **Versão Desktop Ajustada:** Mesclado o layout desktop do Stitch (`36c9a97a77534fea9db13ea2245a3ef6`) com o layout mobile. Envelopada a versão mobile sob a classe `md:hidden` e o layout desktop sob `hidden md:block` no `index.html`. 
-  - **Primeira Dobra Desktop:** Adicionada a imagem local `photo_2026-07-09_18-40-45.jpg` à direita da primeira dobra (Hero) com a classe `.profile-mask-desktop` (`linear-gradient` diagonal a 225 graus), aplicando suavização de opacidade na esquerda e base para mesclar perfeitamente com o fundo de mesh.
-  - **Melhorias de Script:** Atualizado `src/main.js` para gerenciar a classe dinâmica no scroll da TopNavBar de desktop e a animação de revelação suave (`IntersectionObserver`) de cards com a classe `.reveal-on-scroll`.
+  - **Versão Desktop Ajustada:** Mesclado o layout desktop do Stitch (`36c9a97a77534fea9db13ea2245a3ef6`) com o layout mobile.
+  - **Alteração Imagem Desktop:** Substituída a imagem do hero desktop por `/src/assets/hero_desktop.png` e removidos os efeitos de máscara CSS (`.profile-mask-desktop`), renderizando a imagem estática de forma direta e limpa no Hero de desktop.
+  - **Melhorias de Script:** Atualizado `src/main.js` para gerenciar a classe dinâmica no scroll da TopNavBar de desktop e a animação de revelação suave (`IntersectionObserver`) de cards.
 
 ---
 *Instrução para outra IDE:* Mantenha este arquivo atualizado em português, respeitando o limite de 70 linhas, documentando todas as principais alterações, arquitetura de testes (fast-check) e decisões sobre o design.
