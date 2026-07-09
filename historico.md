@@ -20,6 +20,9 @@ Este arquivo registra o andamento das tarefas e decisões tomadas para manter a 
   - Criados testes baseados em propriedades (Property-Based Testing) com `fast-check` no arquivo `src/main.test.js` para garantir integridade matemática do paralaxe.
   - Validados testes (`npm run test`) e build de produção (`npm run build`) com sucesso.
   - **Correção Visual:** Adicionada a classe `.profile-mask` (`mask-image` com gradiente de opacidade vertical) no container da imagem do cabeçalho. Isso suaviza a transição da foto na base para transparente em vez de cor sólida `#101415`, eliminando a linha divisória horizontal reta visível durante a rolagem (scroll) sobre o fundo dinâmico `.bg-mesh`.
+  - **Atualização de Imagem:** Substituída a URL remota da foto do cabeçalho pela imagem local `photo_2026-07-09_18-40-45.jpg` no diretório de recursos da aplicação (`/src/assets/`), garantindo otimização de build, cacheamento de produção e controle direto do ativo de imagem estática.
+  - **Novo Link e Subsite:** Movida a pasta local `/site/` para `/public/site/` (pasta estática do Vite) e atualizado o link de "Meu Modelo de Negócios" para apontar para `/site/`, permitindo o build unificado e hospedagem sem erros 404 na Vercel.
+  - **Integração WhatsApp:** Configurado o link "Seja um Investidor" e "Falar com a Assessoria" para apontar para o WhatsApp `+55 27 99578-9223`, integrando mensagens personalizadas focadas nas métricas de investimento da Fidelity (3% de dividendos mensais, tese em postos de combustíveis e aquisição de equity).
 
 ---
 *Instrução para outra IDE:* Mantenha este arquivo atualizado em português, respeitando o limite de 70 linhas, documentando todas as principais alterações, arquitetura de testes (fast-check) e decisões sobre o design.
