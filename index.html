@@ -12,7 +12,7 @@
     <div class="bg-mesh"></div>
     
     <!-- Main Stack -->
-    <main class="max-w-[480px] mx-auto flex flex-col items-center">
+    <main class="max-w-[480px] mx-auto flex flex-col items-center md:hidden">
         <!-- Hero Section with Background Photo -->
         <header class="w-full relative h-[60vh] min-h-[450px] mb-8">
             <!-- Background Image -->
@@ -114,6 +114,192 @@
             </footer>
         </div>
     </main>
+
+    <!-- DESKTOP VERSION -->
+    <div class="hidden md:block bg-transparent text-on-surface min-h-screen">
+        <!-- TopNavBar -->
+        <nav class="bg-surface/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/30 transition-all duration-300">
+            <div class="flex justify-between items-center pt-6 pb-6 px-container shifted-container max-w-7xl">
+                <div class="font-headline-lg text-[20px] font-bold text-on-surface tracking-wider uppercase">
+                    Leonardo Barcelos
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="/site/" class="text-on-surface-variant hover:text-secondary transition-colors font-label-sm text-[12px] uppercase tracking-wider">Modelo de Negócio</a>
+                    <a href="https://wa.me/5527995789223?text=Ol%C3%A1%20Leonardo%2C%20vi%20seu%20perfil%20e%20gostaria%20de%20entender%20mais%20sobre%20a%20tese%20da%20Fidelity%20de%20investimento%20em%20postos%20de%20combust%C3%ADveis%20com%203%25%20de%20dividendos%20mensais.%20Tenho%20interesse%20em%20me%20tornar%20s%C3%B3cio%20investidor.%20Como%20funciona%20o%20processo%20de%20aplica%C3%A7%C3%A3o%3F" class="bg-secondary text-on-secondary px-5 py-2.5 font-label-sm text-[11px] font-bold tracking-widest uppercase transition-all duration-300 hover:opacity-90 active:scale-95">
+                        Seja um Sócio
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="pt-32">
+            <!-- Hero Section -->
+            <section class="relative min-h-[80vh] flex items-center overflow-hidden">
+                <!-- Imagem do Leonardo Barcelos com máscara degradê -->
+                <div class="absolute right-0 top-0 w-[50%] h-full hidden md:block overflow-hidden profile-mask-desktop z-0">
+                    <img class="w-full h-full object-cover object-top" src="/src/assets/photo_2026-07-09_18-40-45.jpg" alt="Leonardo Barcelos">
+                </div>
+                
+                <div class="relative z-10 max-w-7xl shifted-container px-container w-full">
+                    <div class="max-w-2xl space-y-6">
+                        <h1 class="font-headline-xl text-headline-xl md:text-[80px] leading-none font-extrabold tracking-tighter uppercase text-on-surface">
+                            Leonardo<br>Barcelos
+                        </h1>
+                        <div class="space-y-2">
+                            <p class="font-label-sm text-label-sm text-secondary tracking-[0.3em] uppercase">Equity Strategist</p>
+                            <p class="font-headline-lg text-headline-lg md:text-headline-xl text-on-surface-variant max-w-lg leading-tight">
+                                Transformando postos de combustíveis em ativos geradores de riqueza.
+                            </p>
+                        </div>
+                        <div class="pt-8">
+                            <a href="https://wa.me/5527995789223?text=Ol%C3%A1%20Leonardo%2C%20vi%20seu%20perfil%20e%20gostaria%20de%20entender%20mais%20sobre%20a%20tese%20da%20Fidelity%20de%20investimento%20em%20postos%20de%20combust%C3%ADveis%20com%203%25%20de%20dividendos%20mensais.%20Tenho%20interesse%20em%20me%20tornar%20s%C3%B3cio%20investidor.%20Como%20funciona%20o%20processo%20de%20aplica%C3%A7%C3%A3o%3F" class="group inline-flex items-center gap-4 bg-secondary text-on-secondary px-8 py-4 font-label-sm text-label-sm font-bold tracking-widest transition-all duration-300 hover:gap-6 active:scale-95">
+                                SEJA UM INVESTIDOR
+                                <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="bg-surface-container-lowest py-16 border-y border-outline-variant/10">
+                <div class="max-w-7xl shifted-container px-container">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 items-center reveal-on-scroll">
+                        <div class="text-left md:border-r border-outline-variant/20">
+                            <p class="font-headline-lg text-headline-lg text-on-surface font-bold">150M+</p>
+                            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Assets sob Gestão</p>
+                        </div>
+                        <div class="text-left md:border-r border-outline-variant/20">
+                            <p class="font-headline-lg text-headline-lg text-on-surface font-bold">18+ Anos</p>
+                            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Experiência</p>
+                        </div>
+                        <div class="text-left md:border-r border-outline-variant/20">
+                            <p class="font-headline-lg text-headline-lg text-on-surface font-bold">28+</p>
+                            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Empresas Criadas</p>
+                        </div>
+                        <div class="text-left">
+                            <p class="font-headline-lg text-headline-lg text-on-surface font-bold">200+</p>
+                            <p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Investidores Ativos</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Grid -->
+            <section class="max-w-7xl shifted-container px-container py-32">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                    <!-- Seja um Investidor Card -->
+                    <div class="md:col-span-8 relative group h-[500px] overflow-hidden rounded-lg bg-surface-container border border-outline-variant/20 shadow-2xl reveal-on-scroll">
+                        <!-- Imagem de fundo no card -->
+                        <div class="absolute inset-0 z-0">
+                            <img class="w-full h-full object-cover object-top opacity-30 group-hover:scale-105 transition-transform duration-700" src="/src/assets/photo_2026-07-09_18-40-45.jpg" alt="Seja um Sócio">
+                            <div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/60 to-transparent"></div>
+                        </div>
+                        <div class="absolute inset-0 p-10 flex flex-col justify-end z-10">
+                            <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-4 block">Oportunidade</span>
+                            <h3 class="font-headline-xl text-headline-xl text-on-surface mb-4">Seja um Sócio Investidor</h3>
+                            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mb-6">Acesso exclusivo a operações de Private Equity no setor de combustíveis com previsibilidade e governança.</p>
+                            <a class="inline-flex items-center gap-2 text-secondary font-bold font-label-sm text-label-sm uppercase hover:underline" href="https://wa.me/5527995789223?text=Ol%C3%A1%20Leonardo%2C%20vi%20seu%20perfil%20e%20gostaria%20de%20entender%20mais%20sobre%20a%20tese%20da%20Fidelity%20de%20investimento%20em%20postos%20de%20combust%C3%ADveis%20com%203%25%20de%20dividendos%20mensais.%20Tenho%20interesse%20em%20me%20tornar%20s%C3%B3cio%20investidor.%20Como%20funciona%20o%20processo%20de%20aplica%C3%A7%C3%A3o%3F">Saiba mais <span class="material-symbols-outlined">chevron_right</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Modelo de Negócio Card -->
+                    <div class="md:col-span-4 glass-card p-10 flex flex-col justify-between rounded-lg reveal-on-scroll">
+                        <div>
+                            <div class="w-12 h-12 bg-secondary/10 flex items-center justify-center rounded-sm mb-8">
+                                <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+                            </div>
+                            <h3 class="font-headline-lg text-headline-lg text-on-surface mb-4">Modelo de Negócio</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Estruturação de operações focadas em rentabilidade máxima e segurança jurídica para sócios.</p>
+                        </div>
+                        <div>
+                            <ul class="space-y-4 mt-8 mb-8">
+                                <li class="flex items-center gap-3 text-on-surface">
+                                    <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                    <span class="font-body-md text-body-md">M&amp;A Estruturado</span>
+                                </li>
+                                <li class="flex items-center gap-3 text-on-surface">
+                                    <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                                    <span class="font-body-md text-body-md">Dividendos Recorrentes</span>
+                                </li>
+                            </ul>
+                            <a href="/site/" class="w-full inline-block border border-secondary text-secondary py-3 text-center font-label-sm text-[11px] font-bold tracking-widest uppercase hover:bg-secondary/10 active:scale-95 transition-all">
+                                Explorar tese
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bastidores Card -->
+                    <div class="md:col-span-5 glass-card p-10 flex flex-col justify-center rounded-lg relative overflow-hidden reveal-on-scroll">
+                        <div class="absolute -right-10 -top-10 opacity-5">
+                            <span class="material-symbols-outlined text-[200px]">hub</span>
+                        </div>
+                        <span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mb-4 block">Networking &amp; Análise</span>
+                        <h3 class="font-headline-lg text-headline-lg text-on-surface mb-4">Bastidores</h3>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-8">Acompanhe a rotina estratégica, as mesas de negociação e o ecossistema de postos de alta performance.</p>
+                        <a class="flex items-center gap-3 font-bold font-label-sm text-label-sm text-on-surface group" href="#" target="_blank">
+                            <span class="p-2 bg-surface-bright rounded-full group-hover:bg-secondary transition-colors group-hover:text-on-secondary">
+                                <span class="material-symbols-outlined">alternate_email</span>
+                            </span>
+                            @LEONARDOBARCELOS
+                        </a>
+                    </div>
+
+                    <!-- Falar com Assessoria Card -->
+                    <div class="md:col-span-7 bg-secondary/95 p-10 flex flex-col md:flex-row justify-between items-center gap-8 rounded-lg shadow-xl shadow-secondary/10 reveal-on-scroll">
+                        <div class="text-on-secondary">
+                            <h3 class="font-headline-lg text-headline-lg font-bold mb-2">Assessoria Privada</h3>
+                            <p class="font-body-md text-body-md opacity-90 max-w-sm">Consultoria estratégica individual para investidores qualificados e expansão de rede.</p>
+                        </div>
+                        <a href="https://wa.me/5527995789223?text=Ol%C3%A1%20assessoria%20do%20Leonardo%20Barcelos%2C%20gostaria%20de%20conversar%20sobre%20as%20teses%20de%20investimento%20da%20Fidelity%20e%20oportunidades%20de%20equity." class="whitespace-nowrap bg-on-secondary text-secondary px-10 py-5 font-label-sm text-label-sm font-extrabold tracking-[0.2em] uppercase transition-all duration-300 hover:bg-surface-dim hover:text-on-surface active:scale-95 text-center">
+                            FALAR COM ASSESSORIA
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="py-24 bg-surface-container-low">
+                <div class="max-w-4xl shifted-container px-container text-left space-y-8">
+                    <h2 class="font-headline-xl text-headline-xl md:text-[56px] text-on-surface leading-tight">Pronto para elevar o patamar do seu capital?</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Junte-se ao grupo seleto de investidores que enxerga o setor de energia como a próxima fronteira de equity wealth.</p>
+                    <div class="flex flex-col md:flex-row gap-4 pt-8">
+                        <a href="https://wa.me/5527995789223?text=Ol%C3%A1%20Leonardo%2C%20vi%20seu%20perfil%20e%20gostaria%20de%20entender%20mais%20sobre%20a%20tese%20da%20Fidelity%20de%20investimento%20em%20postos%20de%20combust%C3%ADveis%20com%203%25%20de%20dividendos%20mensais.%20Tenho%20interesse%20em%20me%20tornar%20s%C3%B3cio%20investidor.%20Como%20funciona%20o%20processo%20de%20aplica%C3%A7%C3%A3o%3F" class="bg-secondary text-on-secondary px-12 py-5 font-label-sm text-label-sm font-bold tracking-widest transition-all duration-300 hover:opacity-90 active:scale-95 text-center">
+                            QUERO INVESTIR AGORA
+                        </a>
+                        <a href="/site/" class="border border-secondary text-secondary px-12 py-5 font-label-sm text-label-sm font-bold tracking-widest transition-all duration-300 hover:bg-secondary/10 active:scale-95 text-center">
+                            VER MODELO DE NEGÓCIO
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-surface-container-lowest dark:bg-surface-container-lowest w-full py-12 border-t border-outline-variant/20">
+            <div class="flex flex-col md:flex-row justify-between items-start shifted-container px-container max-w-7xl gap-stack-gap-md">
+                <div class="flex flex-col items-start gap-4">
+                    <div class="font-headline-lg text-headline-lg font-bold text-on-surface">LEONARDO BARCELOS</div>
+                    <p class="font-body-md text-body-md text-on-surface-variant opacity-80">© 2024 Leonardo Barcelos. Todos os direitos reservados.</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+                    <div class="flex gap-8">
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-sm text-label-sm" href="#">Privacidade</a>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-sm text-label-sm" href="#">Termos de Uso</a>
+                        <a class="text-on-surface-variant hover:text-secondary transition-colors font-label-sm text-label-sm" href="#">Compliance</a>
+                    </div>
+                    <div class="flex gap-4 mt-4 md:mt-0">
+                        <a class="w-10 h-10 flex items-center justify-center border border-outline-variant/30 rounded-sm hover:text-secondary transition-all opacity-80 hover:opacity-100" href="#">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </a>
+                        <a class="w-10 h-10 flex items-center justify-center border border-outline-variant/30 rounded-sm hover:text-secondary transition-all opacity-80 hover:opacity-100" href="#">
+                            <span class="material-symbols-outlined text-sm">mail</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
 </body>

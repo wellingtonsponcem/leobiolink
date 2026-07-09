@@ -19,12 +19,15 @@ Este arquivo registra o andamento das tarefas e decisões tomadas para manter a 
   - Implementada a lógica de micro-interações e cálculo puro de paralaxe do mouse em `src/main.js`.
   - Criados testes baseados em propriedades (Property-Based Testing) com `fast-check` no arquivo `src/main.test.js` para garantir integridade matemática do paralaxe.
   - Validados testes (`npm run test`) e build de produção (`npm run build`) com sucesso.
-  - **Correção Visual:** Adicionada a classe `.profile-mask` (`mask-image` com gradiente de opacidade vertical) no container da imagem do cabeçalho. Isso suaviza a transição da foto na base para transparente em vez de cor sólida `#101415`, eliminando a linha divisória horizontal reta visível durante a rolagem (scroll) sobre o fundo dinâmico `.bg-mesh`.
-  - **Atualização de Imagem:** Substituída a URL remota da foto do cabeçalho pela imagem local `photo_2026-07-09_18-40-45.jpg` no diretório de recursos da aplicação (`/src/assets/`), garantindo otimização de build, cacheamento de produção e controle direto do ativo de imagem estática.
-  - **Novo Link e Subsite:** Movida a pasta local `/site/` para `/public/site/` (pasta estática do Vite) e atualizado o link de "Meu Modelo de Negócios" para apontar para `/site/`, permitindo o build unificado e hospedagem sem erros 404 na Vercel.
-  - **Integração WhatsApp:** Configurado o link "Seja um Investidor" e "Falar com a Assessoria" para apontar para o WhatsApp `+55 27 99578-9223`, integrando mensagens personalizadas focadas nas métricas de investimento da Fidelity (3% de dividendos mensais, tese em postos de combustíveis e aquisição de equity).
-  - **Atualização do Logotipo:** Copiado o arquivo `logo_fidelity-P-M.svg` para a pasta estática `/public/site/asset/` e atualizado o link de referência no HTML do subsite (`/public/site/index.html`).
-  - **Favicon Global:** Copiado o arquivo `favicon.png` para a raiz de `/public/` e adicionada a tag `<link rel="icon" type="image/png" href="/favicon.png">` no cabeçalho do `index.html` da raiz, garantindo a exibição do ícone personalizado em toda a aplicação.
+  - **Correção Visual:** Adicionada a classe `.profile-mask` (`mask-image` com gradiente de opacidade vertical) no container da imagem do cabeçalho.
+  - **Atualização de Imagem:** Substituída a URL remota da foto do cabeçalho pela imagem local `photo_2026-07-09_18-40-45.jpg` no diretório de recursos da aplicação (`/src/assets/`).
+  - **Novo Link e Subsite:** Movida a pasta local `/site/` para `/public/site/` (pasta estática do Vite) e atualizado o link de "Meu Modelo de Negócios" para apontar para `/site/`.
+  - **Integração WhatsApp:** Configurado o link "Seja um Investidor" e "Falar com a Assessoria" para apontar para o WhatsApp `+55 27 99578-9223` com copies personalizadas.
+  - **Atualização do Logotipo:** Copiado o arquivo `logo_fidelity-P-M.svg` para a pasta estática `/public/site/asset/` e atualizado o subsite.
+  - **Favicon Global:** Copiado o arquivo `favicon.png` para a raiz de `/public/` e linkado no cabeçalho.
+  - **Versão Desktop Ajustada:** Mesclado o layout desktop do Stitch (`36c9a97a77534fea9db13ea2245a3ef6`) com o layout mobile. Envelopada a versão mobile sob a classe `md:hidden` e o layout desktop sob `hidden md:block` no `index.html`. 
+  - **Primeira Dobra Desktop:** Adicionada a imagem local `photo_2026-07-09_18-40-45.jpg` à direita da primeira dobra (Hero) com a classe `.profile-mask-desktop` (`linear-gradient` diagonal a 225 graus), aplicando suavização de opacidade na esquerda e base para mesclar perfeitamente com o fundo de mesh.
+  - **Melhorias de Script:** Atualizado `src/main.js` para gerenciar a classe dinâmica no scroll da TopNavBar de desktop e a animação de revelação suave (`IntersectionObserver`) de cards com a classe `.reveal-on-scroll`.
 
 ---
 *Instrução para outra IDE:* Mantenha este arquivo atualizado em português, respeitando o limite de 70 linhas, documentando todas as principais alterações, arquitetura de testes (fast-check) e decisões sobre o design.
