@@ -28,7 +28,7 @@ Este arquivo registra o andamento das tarefas e decisões tomadas para manter a 
   - **Versão Desktop Ajustada:** Mesclado o layout desktop do Stitch (`36c9a97a77534fea9db13ea2245a3ef6`) com o layout mobile.
   - **Alteração Imagem Desktop:** Substituída a imagem do hero desktop por `/src/assets/hero_desktop.png` e removidos os efeitos de máscara CSS (`.profile-mask-desktop`).
   - **Remoção da NavBar e pt-32:** Removidos a barra de navegação e o espaçamento de topo no desktop.
-  - **Centralização de Estatísticas:** Alterada a seção de estatísticas do desktop, substituindo a classe `.shifted-container` por `.mx-auto` no contêiner envolvente e aplicando `.text-center` no grid de estatísticas para alinhamento horizontal perfeitamente centralizado.
+  - **Centralização de Layout:** Alterado o comportamento da classe `.shifted-container` no `src/style.css`, substituindo a margem esquerda absoluta de 15% por margens automáticas bilaterais (`margin-left: auto; margin-right: auto;`), centralizando o conteúdo de todo o site desktop com 85% de largura de forma simétrica.
   - **Melhorias de Script:** Atualizado `src/main.js` para gerenciar a animação de revelação suave (`IntersectionObserver`) de cards.
 
 ---
