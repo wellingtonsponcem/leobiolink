@@ -19,6 +19,7 @@ Este arquivo registra o andamento das tarefas e decisões tomadas para manter a 
   - Implementada a lógica de micro-interações e cálculo puro de paralaxe do mouse em `src/main.js`.
   - Criados testes baseados em propriedades (Property-Based Testing) com `fast-check` no arquivo `src/main.test.js` para garantir integridade matemática do paralaxe.
   - Validados testes (`npm run test`) e build de produção (`npm run build`) com sucesso.
+  - **Correção Visual:** Adicionada a classe `.profile-mask` (`mask-image` com gradiente de opacidade vertical) no container da imagem do cabeçalho. Isso suaviza a transição da foto na base para transparente em vez de cor sólida `#101415`, eliminando a linha divisória horizontal reta visível durante a rolagem (scroll) sobre o fundo dinâmico `.bg-mesh`.
 
 ---
 *Instrução para outra IDE:* Mantenha este arquivo atualizado em português, respeitando o limite de 70 linhas, documentando todas as principais alterações, arquitetura de testes (fast-check) e decisões sobre o design.
