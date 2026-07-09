@@ -27,7 +27,8 @@ Este arquivo registra o andamento das tarefas e decisões tomadas para manter a 
   - **Favicon Global:** Copiado o arquivo `favicon.png` para a raiz de `/public/` e linkado no cabeçalho.
   - **Versão Desktop Ajustada:** Mesclado o layout desktop do Stitch (`36c9a97a77534fea9db13ea2245a3ef6`) com o layout mobile.
   - **Alteração Imagem Desktop:** Substituída a imagem do hero desktop por `/src/assets/hero_desktop.png` e removidos os efeitos de máscara CSS (`.profile-mask-desktop`), renderizando a imagem estática de forma direta e limpa no Hero de desktop.
-  - **Melhorias de Script:** Atualizado `src/main.js` para gerenciar a classe dinâmica no scroll da TopNavBar de desktop e a animação de revelação suave (`IntersectionObserver`) de cards.
+  - **Remoção da NavBar:** Removido o bloco da barra de navegação superior (`<nav>`) do desktop no `index.html` para manter o visual limpo e focado no conteúdo.
+  - **Melhorias de Script:** Atualizado `src/main.js` para gerenciar a animação de revelação suave (`IntersectionObserver`) de cards.
 
 ---
 *Instrução para outra IDE:* Mantenha este arquivo atualizado em português, respeitando o limite de 70 linhas, documentando todas as principais alterações, arquitetura de testes (fast-check) e decisões sobre o design.
