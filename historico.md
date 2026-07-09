@@ -15,7 +15,7 @@ Este arquivo registra o andamento das tarefas e decisões tomadas para manter a 
   - Instalado o Vite e dependências de desenvolvimento (`tailwindcss`, `@tailwindcss/vite`, `vitest`, `fast-check`).
   - Configurado o compilador Tailwind v4 no arquivo `vite.config.js`.
   - Criado o arquivo `index.html` adaptando a estrutura sem CDN.
-  - Criado o arquivo `src/style.css` mapeando os tokens de design (cores, fontes, espaçamentos) e estilos de paralaxe/cards.
+  - Criado o arquivo `src/style.css` mapeando os tokens de design (cores, fontes, espaçamentos) e styles de paralaxe/cards.
   - Implementada a lógica de micro-interações e cálculo puro de paralaxe do mouse em `src/main.js`.
   - Criados testes baseados em propriedades (Property-Based Testing) com `fast-check` no arquivo `src/main.test.js` para garantir integridade matemática do paralaxe.
   - Validados testes (`npm run test`) e build de produção (`npm run build`) com sucesso.
@@ -29,7 +29,8 @@ Este arquivo registra o andamento das tarefas e decisões tomadas para manter a 
   - **Alteração Imagem Desktop:** Substituída a imagem do hero desktop por `/src/assets/hero_desktop.png` e removidos os efeitos de máscara CSS.
   - **Remoção da NavBar e pt-32:** Removidos a barra de navegação e o espaçamento de topo no desktop.
   - **Centralização de Layout:** Centralizado o contêiner `.shifted-container` com margens automáticas simétricas.
-  - **Card de Oportunidade:** Gerada imagem de posto de combustível ultra-moderno (`gas_station_premium.png`) via inteligência artificial e aplicada como plano de fundo do card de Private Equity "Seja um Sócio Investidor" (substituindo a foto anterior do expert).
+  - **Card de Oportunidade:** Gerada imagem de posto de combustível ultra-moderno (`gas_station_premium.png`) e aplicada no card "Seja um Sócio Investidor".
+  - **Link de Redes Sociais:** Adicionado o link oficial do Instagram (`https://www.instagram.com/leonardobarcelos_oficial/`) no card "Bastidores" do desktop e no rodapé do subsite da Fidelity (`/public/site/index.html`).
   - **Melhorias de Script:** Atualizado `src/main.js` para gerenciar a animação de revelação suave (`IntersectionObserver`) de cards.
 
 ---
