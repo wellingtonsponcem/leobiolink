@@ -23,7 +23,8 @@ Este arquivo registra o andamento das tarefas e decisões tomadas para manter a 
   - **Atualização de Imagem:** Substituída a URL remota da foto do cabeçalho pela imagem local `photo_2026-07-09_18-40-45.jpg` no diretório de recursos da aplicação (`/src/assets/`), garantindo otimização de build, cacheamento de produção e controle direto do ativo de imagem estática.
   - **Novo Link e Subsite:** Movida a pasta local `/site/` para `/public/site/` (pasta estática do Vite) e atualizado o link de "Meu Modelo de Negócios" para apontar para `/site/`, permitindo o build unificado e hospedagem sem erros 404 na Vercel.
   - **Integração WhatsApp:** Configurado o link "Seja um Investidor" e "Falar com a Assessoria" para apontar para o WhatsApp `+55 27 99578-9223`, integrando mensagens personalizadas focadas nas métricas de investimento da Fidelity (3% de dividendos mensais, tese em postos de combustíveis e aquisição de equity).
-  - **Atualização do Logotipo:** Copiado o arquivo `logo_fidelity-P-M.svg` para a pasta estática `/public/site/asset/` e atualizado o link de referência no HTML do subsite (`/public/site/index.html`) para substituir o arquivo anterior de logotipo.
+  - **Atualização do Logotipo:** Copiado o arquivo `logo_fidelity-P-M.svg` para a pasta estática `/public/site/asset/` e atualizado o link de referência no HTML do subsite (`/public/site/index.html`).
+  - **Favicon Global:** Copiado o arquivo `favicon.png` para a raiz de `/public/` e adicionada a tag `<link rel="icon" type="image/png" href="/favicon.png">` no cabeçalho do `index.html` da raiz, garantindo a exibição do ícone personalizado em toda a aplicação.
 
 ---
 *Instrução para outra IDE:* Mantenha este arquivo atualizado em português, respeitando o limite de 70 linhas, documentando todas as principais alterações, arquitetura de testes (fast-check) e decisões sobre o design.
