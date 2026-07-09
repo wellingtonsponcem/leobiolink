@@ -26,9 +26,10 @@ Este arquivo registra o andamento das tarefas e decisões tomadas para manter a 
   - **Atualização do Logotipo:** Copiado o arquivo `logo_fidelity-P-M.svg` para a pasta estática `/public/site/asset/` e atualizado o subsite.
   - **Favicon Global:** Copiado o arquivo `favicon.png` para a raiz de `/public/` e linkado no cabeçalho.
   - **Versão Desktop Ajustada:** Mesclado o layout desktop do Stitch (`36c9a97a77534fea9db13ea2245a3ef6`) com o layout mobile.
-  - **Alteração Imagem Desktop:** Substituída a imagem do hero desktop por `/src/assets/hero_desktop.png` e removidos os efeitos de máscara CSS (`.profile-mask-desktop`).
+  - **Alteração Imagem Desktop:** Substituída a imagem do hero desktop por `/src/assets/hero_desktop.png` e removidos os efeitos de máscara CSS.
   - **Remoção da NavBar e pt-32:** Removidos a barra de navegação e o espaçamento de topo no desktop.
-  - **Centralização de Layout:** Alterado o comportamento da classe `.shifted-container` no `src/style.css`, substituindo a margem esquerda absoluta de 15% por margens automáticas bilaterais (`margin-left: auto; margin-right: auto;`), centralizando o conteúdo de todo o site desktop com 85% de largura de forma simétrica.
+  - **Centralização de Layout:** Centralizado o contêiner `.shifted-container` com margens automáticas simétricas.
+  - **Card de Oportunidade:** Gerada imagem de posto de combustível ultra-moderno (`gas_station_premium.png`) via inteligência artificial e aplicada como plano de fundo do card de Private Equity "Seja um Sócio Investidor" (substituindo a foto anterior do expert).
   - **Melhorias de Script:** Atualizado `src/main.js` para gerenciar a animação de revelação suave (`IntersectionObserver`) de cards.
 
 ---
